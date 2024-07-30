@@ -39,15 +39,14 @@
             gap: 20px;
         }
 
-        .links{
-            color: white;
-
-
-            font-family: 'Roboto';
-
-            font-size: 20px;
+        .links, a{
             display: flex;
             gap: 20px;
+
+            color: white;
+            font-family: 'Roboto';
+            font-size: 20px;
+            text-decoration: none;
         }
     }
 
@@ -57,7 +56,12 @@
 
         display: flex;
         gap: 100px;
+    
+        a{
+            text-decoration: none;
+        }
     }
+
 
     .card{
         display: flex;
