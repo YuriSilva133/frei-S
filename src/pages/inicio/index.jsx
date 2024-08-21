@@ -1,56 +1,54 @@
-import { Link } from "react-router-dom";
-import './index.scss';
+import { Link } from 'react-router-dom'
+import './index.scss'
 
+export default function Inicio() {
+    return (
+        <div className='pagina-inicio'>
+            <div className='cabecalho'>
+                <div className='titulo'>
+                    <img src='/logo.png' alt='logo'/>
+                    <h1>
+                        React FreiS
+                    </h1>
+                </div>
+                <div className='links'>
+                    <Link to='/' className='link'>Inicio</Link>
+                    <Link to='/sobre' className='link'>Sobre</Link>
+                </div>
+            </div>
+            <div className='menu'>
+                <div className='titulo'>
+                    <h2>Escolha um treino...</h2>
+                </div>
+                <div className='cards'>
+                    <Link to='/ex01' className='link'>
+                        <div className='card'>
+                            <div className='retangulo laranja'/>
+                            <h3 className='titulo'>Cupom de desconto</h3>
+                            <h4 className='subtitulo'>Exercício 1</h4>
+                        </div>
+                    </Link>
 
-export default function App() {
-  return (
-    <div className="pagina-app">
+                    <Link to='/ex10' className='link'>
+                        <div className='card'>
+                            <div className='retangulo marrom'/>
+                            <h3 className='titulo'>Calculo de IMC com historico</h3>
+                            <h4 className='subtitulo'>Exercício 10</h4>
+                        </div>
+                    </Link>
 
-      <header className="cabecalho">
+                    <Link to='/ex11' className='link'>
+                        <div className='card'>
+                            <div className='retangulo roxo'/>
+                            <h3 className='titulo'>Tabuada</h3>
+                            <h4 className='subtitulo'>Exercício 11</h4>
+                        </div>
+                    </Link>
 
-        <div className="logo">
-          <img src="/assets/images/logo.png" alt="" width={51.52} height={60} />
-          <h2>React FreiS</h2>
+                    
+
+                </div>
+            </div>
         </div>
-
-        <div className="links">
-          <Link to='/'>Inicio</Link>
-          <Link to='/sobre'> Sobre</Link>
-        </div>
-      </header>
-
-      <h1>Escolha um treino...</h1>
-
-      <section className="secao">
-
-        <Link to='/'>
-          <div className="card">
-            <div className="bloco dourado"></div>
-
-            <h4>Cupom de desconto</h4>
-            <p>Exercício 01</p>
-          </div>
-        </Link>
-
-        <Link to='/'>
-          <div className="card">
-            <div className="bloco verde"></div>
-
-            <h4>Converter Kg/gramas</h4>
-            <p>Exercício 02</p>
-          </div>
-        </Link>
-
-        <Link to='/'>
-          <div className="card">
-            <div className="bloco azul"></div>
-            
-            <h4>Valor total por quantidade</h4>
-            <p>Exercício 03</p>
-          </div>
-        </Link>
-      </section>
-
-    </div>
-  );
+    )
 }
