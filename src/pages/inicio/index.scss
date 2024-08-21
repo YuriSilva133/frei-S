@@ -1,42 +1,31 @@
 .pagina-inicio {
     font-family: 'Roboto', 'Arial';
 
-    .cabecalho {
-        display: flex;
-        height: 80px;
-        justify-content: space-between;
-        padding: 0 80px;
-        background-color: #6278F7;
+
+    header{
+        padding: 50px 0px 0px 80px;
 
         .titulo {
-            display: flex;
-            align-items: center;
-
-            h1 {
-                color: white;
-                margin-left: 10px;
-            }
-        }
-
-        .links {
-            display: flex;
-            align-items: center;
-
-            .link {
-                margin-left: 10px;
-                text-decoration: none;
-                color: white;
-            }
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #383131;
         }
     }
+    
+
+
 
     .menu {
-        padding: 80px;
-
+        padding: 0px 80px;
+        
         .cards {
             display: flex;
-            gap: 20px;
+            flex-wrap: wrap;
+
+            gap: 30px;
             margin-top: 36px;
+            width: 1200px;
 
             .link {
                 text-decoration: none;
@@ -58,18 +47,6 @@
                     height: 60px;
                     width: 60px;
                     border-radius: 12px;
-                }
-
-                .laranja {
-                    background-color: orange;
-                }
-
-                .roxo {
-                    background-color: purple;
-                }
-
-                .marrom{
-                    background-color: brown;
                 }
 
                 .titulo {
