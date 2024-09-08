@@ -1,7 +1,8 @@
-import { Link } from 'react-router-dom'
 import './index.scss'
 import { useState } from 'react'
+
 import Cabecalho from '../components/cabecalho';
+import InfoEx from '../components/infoEx';
 
 export default function Ex01() {
     const [valorPedido, setValorPedido] = useState(0);
@@ -18,17 +19,11 @@ export default function Ex01() {
             <Cabecalho />
 
             <div className='exercicio'>
-                <div className='titulo'>
-                    <div className='texto'>
-                        <Link to='/'><img src='/voltar.png' alt='voltar' /></Link>
-                        <h2>Exercício 01 - Cupom de desconto</h2>
-                    </div>
-                    <div className='faixa' />
-                </div>
-
-                <div className='descricao'>
-                    <p>Implementar um programa em <b>Javascript</b> para calcular o valor final de uma compra a partir do valor da compra e do cupom de desconto. <b>O cupom diz quantos reais</b> terá de desconto.</p>
-                </div>
+                <InfoEx 
+                titulo="Exercício 01 - Cupom de desconto"
+                    corFaixa="#FFCE37"
+                    descricao="Implementar um programa em Javascript para calcular o valor final de uma compra a partir do valor da compra e do cupom de desconto. O cupom diz quantos reais terá de desconto."
+                />
                 
                 <div className='formulario'>
                     <div className='campos'>

@@ -1,7 +1,6 @@
 import './index.scss'
 import Cabecalho from '../components/cabecalho'
-
-import { Link } from 'react-router-dom'
+import InfoEx from '../components/infoEx'
 
 import { useState } from 'react'
 
@@ -79,17 +78,12 @@ export default function Ex11() {
             <Cabecalho />
 
             <div className='exercicio'>
-                <div className='titulo'>
-                    <div className='texto'>
-                        <Link to='/'><img src='/voltar.png' alt='voltar' /></Link>
-                        <h2>Exercício 10 - Calculo de IMC com histórico</h2>
-                    </div>
-                    <div className='faixa' />
-                </div>
-
-                <div className='descricao'>
-                    <p>Implemente um programa em Javascript que a partir da altura e do peso de uma pessoa, <b>calcule o IMC</b> e avalie a faixa correspondente a tabela ao lado. Ao final, apresente o IMC e a situação</p>
-                </div>
+                
+                <InfoEx
+                    titulo="Exercício 10 - Calculo de IMC com histórico"
+                    corFaixa="purple"
+                    descricao="Implemente um programa em Javascript que a partir da altura e do peso de uma pessoa, calcule o IMC e avalie a faixa correspondente a tabela ao lado. Ao final, apresente o IMC e a situação"
+                />
 
                 <div className='formulario'>
                     <div className='campos'>

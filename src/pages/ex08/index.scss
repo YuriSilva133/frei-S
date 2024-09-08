@@ -1,0 +1,45 @@
+.pagina-ex08 {
+    .exercicio {
+        .tabela-temp {
+            margin-top: 20px;
+
+            table {
+                width: 100%;
+
+                border-collapse: separate;
+                border-spacing: 2px;
+
+                margin: 20px auto;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                background-color: #fcebe8;
+            }
+
+            th,td {
+                padding: 10px;
+            }
+
+            th {
+                background-color: #ed7d31;
+                color: white;
+            }
+
+            tr:nth-child(even) {
+                background-color: #f9d7cd;
+            }
+
+            td {
+                font-size: 14px;
+            }
+        }
+
+        .formulario {
+            .campos {
+                .entradas {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

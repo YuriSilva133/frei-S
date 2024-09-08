@@ -1,0 +1,15 @@
+.pagina-ex02 {
+    .exercicio{
+        .formulario{
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+
+            .resultado{
+                margin-top: 10px;
+            }
+        }
+    }
+}

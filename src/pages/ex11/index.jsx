@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
 import './index.scss'
 import Cabecalho from '../components/cabecalho';
+import InfoEx from '../components/infoEx';
 
 export default function Ex11() {
     const [valor, setValor] = useState(0);
@@ -26,38 +26,34 @@ export default function Ex11() {
             <Cabecalho />
 
             <div className='exercicio'>
-                <div className='titulo'>
-                    <div className='texto'>
-                        <Link to='/'><img src='/voltar.png' alt='voltar' /></Link>
-                        <h2>Exercício 11 - Tabuada</h2>
-                    </div>
-                    <div className='faixa roxa' />
-                </div>
 
-                <div className='descricao'>
-                    <p>Implemente um programa em Javascript que escreva a tabuada de um número informado pelo usuário. A mensagem deve estar no formato ”A x B = X”.</p>
-                </div>
-
+                <InfoEx
+                    titulo="Exercício 11 - Tabuada"
+                    corFaixa="purple"
+                    descricao="Implemente um programa em Javascript que escreva a tabuada de um número informado pelo usuário. A mensagem deve estar no formato ”A x B = X”."
+                />
                 <div className='formulario'>
                     <div className='campos'>
-                        <div className='campo'>
-                            <label>Tabuada do:</label>
-                            <input
-                                placeholder='0'
-                                onChange={e => setValor(e.target.value)}
-                            />
+                        <div className='entradas'>
+                            <div className='campo'>
+                                <label>Tabuada do:</label>
+                                <input
+                                    placeholder='0'
+                                    onChange={e => setValor(e.target.value)}
+                                />
+                            </div>
                         </div>
 
-                        <button className='executar' onClick={calcularTabuada}>
-                            Executar
-                        </button>
+                        <button className='executar' onClick={calcularTabuada}> Executar</button>
                     </div>
+                    <div className='resultado'>
 
-                    {
-                        tabuadas.map(
-                            linha => <p>{linha}</p>
-                        )
-                    }
+                        {
+                            tabuadas.map(
+                                linha => <p>{linha}</p>
+                            )
+                        }
+                    </div>
                 </div>
             </div>
         </div>

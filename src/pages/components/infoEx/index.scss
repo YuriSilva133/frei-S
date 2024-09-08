@@ -1,0 +1,35 @@
+.descricao-comp {
+  width: 100%;
+
+    .titulo {
+        font-family: 'Roboto', 'Arial';
+
+        .texto {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+
+            h2 {
+                margin-left: 10px;
+            }
+        }
+
+        .faixa {
+            height: 4px;
+        }
+    }
+
+    .descricao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto', 'Arial';
+
+        background-color: white;
+       
+        height: 215px;
+        border-radius: 12px;
+        padding: 30px;
+        margin-top: 20px;
+    }
+}

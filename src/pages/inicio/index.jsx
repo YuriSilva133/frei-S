@@ -8,14 +8,16 @@ export default function Inicio() {
 
             <Cabecalho />
 
-            <header>
-                <div className='titulo'>
-                    <h2>Escolha um treino...</h2>
-                </div>
-            </header>
 
 
             <div className='menu'>
+
+                <header>
+                    <div className='titulo'>
+                        <h2>Escolha um treino...</h2>
+                    </div>
+                </header>
+                
                 <div className='cards'>
 
                     <Link to='/ex01' className='link'>
